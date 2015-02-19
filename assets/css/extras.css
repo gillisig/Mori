@@ -1,0 +1,60 @@
+.post-content p,
+.post-content ul,
+.post-content ol,
+.post-content pre,
+.post-content code,
+.post-content div,
+.post-content address,
+.post-content menu,
+.post-content dir,
+.post-content dl,
+.post-content form,
+.post-content fieldset,
+.post-content label,
+.post-content select,
+.post-content input,
+.post-content table,
+.post-content textarea {
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+  display: block;
+}
+.post-content img {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 1.75em;
+  margin-left: auto;
+  clear: none;
+  text-align: left;
+}
+.post:nth-child(even) {
+  background-color: #f2f2f2;
+}
+ul, ol {
+  margin-bottom: 1.75em;
+}
+a {
+  color: #ff5454;
+  text-decoration: none;
+}
+.post-content pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+.post-content pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}

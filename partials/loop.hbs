@@ -1,0 +1,23 @@
+
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+<article class="{{post_class}}">
+  {{#if image}}
+  <a href="{{url}}"><img class="post-image" src="{{image}}" alt="54cb5e5eca3b7c9a3d9e48f6_747-700px.jpg"></a>
+  {{/if}}
+  <h2 class="post-title brand"><a class="post-title brand" href="{{url}}">{{{title}}}</a></h2>
+  <div class="post-teaser">
+    <p>{{excerpt words="26"}}...</p>
+  </div>
+    <footer class="post-meta">
+      {{#author}}
+        {{#if image}}<a href="{{url}}"><img class="post-author-image" src="{{image}}" alt="Author image" nopin="nopin" /></a>{{/if}}
+        {{!author}}
+        {{!tags prefix=" on "}}
+      {{/author}}
+    </footer>
+</article>
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+{{pagination}}

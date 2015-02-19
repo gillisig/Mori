@@ -1,0 +1,5 @@
+<nav class="w-clearfix pagination">
+  {{#if next}}<a href="/page/{{next}}" class="page-older">Older</a>{{/if}}
+  {{#if prev}}<a href="/page/{{prev}}" class="page-newer">Newer</a>{{/if}}
+  <div class="page-number">Page {{page}} of {{pages}}</div>
+</nav>

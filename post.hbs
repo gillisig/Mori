@@ -1,0 +1,32 @@
+{{!< default}}
+
+{{#post}}
+<main class="main-content">
+  <article class="{{post_class}}">
+    <header class="post-header">
+      {{#if image}}
+        <img class="post-image post-main-image" src="{{image}}">
+      {{/if}}
+      <h1 class="post-title">{{title}}</h1>
+      <section class="post-meta">
+          <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{!tags prefix=" on "}}
+      </section>
+    </header>
+    <section class="post-content">
+      {{content}}
+    </section>
+    <footer class="post-footer">
+      {{#author}}
+      {{#if image}}
+        <a href="{{url}}"><img class="post-author-image" src="{{image}}"  alt="Author image"></a>
+      {{/if}}
+      <a class="w-inline-block post-author-name" href="{{url}}"><h6>{{name}}</h6></a>
+      <div class="post-author-bio">
+        {{bio}}
+      </div>
+      {{/author}}
+    </footer>
+  </article>
+</main>
+
+{{/post}}
