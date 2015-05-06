@@ -56,8 +56,14 @@ p {
 .button {
   display: inline-block;
   padding: 4px 15px;
-  background-color: black;
+  float: none;
+  clear: none;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: transparent;
+  font-family:'PT Sans', sans-serif;
   color: white;
+  font-style: normal;
   text-align: center;
   text-decoration: none;
 }
@@ -293,11 +299,36 @@ p {
   max-width: 100%;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 40px;
-  color: #ababab;
-  font-style: italic;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #ff5454;
+  color: #fff;
   text-align: center;
 }
+.post-featured-sub-title {
+  margin-bottom: 0em;
+  font-family:'PT Sans', sans-serif;
+  color: #dbdbdb;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.post-featured-title {
+  margin-top: 0px;
+  color: white;
+  font-style: normal;
+}
+.post-featured-paragraph {
+  display: inline-block;
+  max-width: 700px;
+  clear: none;
+  color: #ebebeb;
+  font-style: normal;
+}
+
 @media (max-width: 767px) {
   .main-header {
     padding-right: 10px;

@@ -41,13 +41,6 @@
     <header class="main-header">
       <div class="nav-wrapper">
         <nav class="w-clearfix nav">
-
-        {{! Check for pages and make menu links }}
-        {{#foreach featured}}
-          {{#if page }}
-          <a class="post-title brand" href="{{url}}">{{{title}}}</a>
-          {{/if}}
-        {{/foreach}}
           <!--<div class="nav-link">My work</div>
           <div class="nav-link nav-link-right">My story</div>-->
           <a href="/" title="Home" class="logo">{{#if @blog.logo}}<img src="{{@blog.logo}}" alt="Blog Logo" />{{else}}{{@blog.title}}{{/if}}</a>

@@ -58,3 +58,7 @@ a {
   background-color: transparent;
   border: 0;
 }
+.post-featured a{
+  color: white;
+  margin: 0;
+}
