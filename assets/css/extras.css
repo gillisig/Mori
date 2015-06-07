@@ -62,3 +62,30 @@ a {
   color: white;
   margin: 0;
 }
+.social-list {
+  list-style-type: none;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+.social-list-item {
+  position: relative;
+  display: inline-block;
+  padding: 40px;
+}
+.social-list-item img {
+  height: 50px;
+  width: 50px;
+  -webkit-transition: all 100ms linear;
+          transition: all 100ms linear;
+}
+.social-list-item img:hover {
+  -webkit-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+}
